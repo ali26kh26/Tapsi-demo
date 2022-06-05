@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tapsi Demo</title>
+  </head>
+  <body>
+    <section class="container block">
+      <div class="accordion">
+        <header class="accordion__header">
+          <h2 class="accordion__title">سابقه تحصیلی</h2>
+          <span class="icon">
+            <i class="fas fa-chevron-circle-left"></i>
+          </span>
+        </header>
+        <div class="accordion__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          neque ut sed natus, voluptas soluta! Illo voluptatum officiis cumque
+          optio commodi? Dolor praesentium soluta alias officiis, cum iste quos
+          cupiditate.
+        </div>
+      </div>
+      <div class="accordion">
+        <header class="accordion__header">
+          <h2 class="accordion__title">سابقه تحصیلی</h2>
+          <span class="icon">
+            <i class="fas fa-chevron-circle-left"></i>
+          </span>
+        </header>
+        <div class="accordion__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          neque ut sed natus, voluptas soluta! Illo voluptatum officiis cumque
+          optio commodi? Dolor praesentium soluta alias officiis, cum iste quos
+          cupiditate.
+        </div>
+      </div>
+    </section>
+    <script>
+      const accordionHeader = document.querySelectorAll(".accordion__header");
+      accordionHeader.forEach((item) => {
+        item.addEventListener("click", (e) => {
+          e.target.parentElement.classList.toggle("accordion__expanded");
+        });
+      });
+    </script>
+  </body>
+</html>
